@@ -7,4 +7,4 @@ class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
         fields = ('id', 'username', 'email', 'password', 'created_at')
-        read_only_fields = ('created_at')
+        read_only_fields = ('created_at', )
