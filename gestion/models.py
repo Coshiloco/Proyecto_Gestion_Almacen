@@ -1,12 +1,12 @@
 import email
 from unicodedata import name
+
 from django.db import models
 
 # Create your models here.
 
 
 class Cliente(models.Model):
-    idcliente = models.CharField(max_length=500)
     nombrecompania = models.CharField(max_length=500)
     direccionfacturacion = models.CharField(max_length=500)
     ciudad = models.CharField(max_length=500)

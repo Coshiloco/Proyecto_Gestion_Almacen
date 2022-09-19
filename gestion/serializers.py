@@ -8,5 +8,5 @@ from .models import Cliente
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ('id', 'username', 'email', 'password', 'created_at')
+        fields = ('id', 'nombrecompania', 'direccionfacturacion', 'ciudad', 'email', 'password', 'created_at')
         read_only_fields = ('created_at', )
